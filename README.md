@@ -1,36 +1,43 @@
-# Semantic Segmentation
-### Introduction
-In this project, you'll label the pixels of a road in images using a Fully Convolutional Network (FCN).
+# Self Driving Car Engineer Project 12 - Semantic Segmentation
+## Benjamin Söllner, 27 Dec 2017
 
-### Setup
-##### Frameworks and Packages
+---
+
+![Fun Project Header Image](project_carnd_12_semantic_segmentation_400.png)
+
+---
+
+In this project, I label the pixels of a road in images using a Fully
+Convolutional Network (FCN). The fully convolutional network consists of a pre-
+trained encoder based on VGG-16 and a decoder that is trained on a GPU. The
+network is implemented using Tensorflow on Python. All code is in ``main.py``.
+
+![Labeled Image from Validation Set](runs/1514344551.836532/um_000036.png)
+
+![Labeled Image from Validation Set](runs/1514344551.836532/um_000057.png)
+
+![Labeled Image from Validation Set](runs/1514344551.836532/um_000061.png)
+
+## Environment
+### Frameworks and Packages
 Make sure you have the following is installed:
  - [Python 3](https://www.python.org/)
  - [TensorFlow](https://www.tensorflow.org/)
  - [NumPy](http://www.numpy.org/)
  - [SciPy](https://www.scipy.org/)
-##### Dataset
-Download the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php) from [here](http://www.cvlibs.net/download.php?file=data_road.zip).  Extract the dataset in the `data` folder.  This will create the folder `data_road` with all the training a test images.
 
-### Start
-##### Implement
-Implement the code in the `main.py` module indicated by the "TODO" comments.
-The comments indicated with "OPTIONAL" tag are not required to complete.
-##### Run
+### Dataset
+Download the [Kitti Road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php) from [here](http://www.cvlibs.net/download.php
+  ?file=data_road.zip).  Extract the dataset in the `data` folder.  This will create the folder `data_road` with all the training a test images.
+
+### Run
 Run the following command to run the project:
 ```
 python main.py
 ```
 **Note** If running this in Jupyter Notebook system messages, such as those regarding test status, may appear in the terminal rather than the notebook.
 
-### Submission
-1. Ensure you've passed all the unit tests.
-2. Ensure you pass all points on [the rubric](https://review.udacity.com/#!/rubrics/989/view).
-3. Submit the following in a zip file.
- - `helper.py`
- - `main.py`
- - `project_tests.py`
- - Newest inference images from `runs` folder  (**all images from the most recent run**)
- 
- ## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+### Submitted Files
+* [``README.md``](README.md), [``readme.html``](readme.html): you are reading it! :)
+* [``main.py``](main.py): logic to implement, train and save the neural network
+* [``runs/1514344551.836532/*``](runs/1514344551.836532): images from validation set
